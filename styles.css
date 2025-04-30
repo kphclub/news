@@ -1,0 +1,175 @@
+/* Base styles */
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f6f6ef;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+header {
+    background-color: #ff6600;
+    padding: 5px 10px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.logo-image {
+    margin-right: 4px;
+}
+
+.logo a {
+    font-weight: bold;
+    color: #000;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+nav a {
+    color: #000;
+    font-size: 13px;
+}
+
+/* Filter controls */
+.filter-container {
+    max-width: 1200px;
+    margin: 10px auto 0;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e6e6df;
+}
+
+.filter-container span {
+    margin-right: 10px;
+    font-size: 13px;
+    color: #666;
+}
+
+.filter-btn {
+    background: #f6f6ef;
+    border: 1px solid #e6e6df;
+    border-radius: 3px;
+    padding: 3px 8px;
+    margin-right: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    color: #666;
+}
+
+.filter-btn:hover {
+    background-color: #f0f0e8;
+}
+
+.filter-btn.active {
+    background-color: #ff6600;
+    color: white;
+    border-color: #ff6600;
+}
+
+/* Main content */
+main {
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 0 15px;
+}
+
+.loading {
+    text-align: center;
+    padding: 20px;
+}
+
+/* News items */
+.news-item {
+    margin-bottom: 8px;
+    padding: 5px 0;
+}
+
+.news-title {
+    color: #000;
+    font-size: 15px;
+}
+
+.news-info {
+    color: #828282;
+    font-size: 11px;
+    margin-top: 4px;
+}
+
+.news-info a {
+    color: #828282;
+}
+
+.news-info span {
+    margin-right: 5px;
+}
+
+.news-type {
+    display: inline-block;
+    font-size: 10px;
+    padding: 1px 4px;
+    border-radius: 3px;
+    margin-right: 5px;
+    text-transform: uppercase;
+}
+
+.news-type.articles {
+    background-color: #ddeefc;
+    color: #1068bf;
+}
+
+.news-type.videos {
+    background-color: #fce8dd;
+    color: #bf4110;
+}
+
+.news-type.programs {
+    background-color: #e0fce2;
+    color: #10bf31;
+}
+
+/* No results message */
+.no-results {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f6f6ef;
+    border-top: 1px solid #e6e6df;
+    text-align: center;
+    font-size: 12px;
+    color: #828282;
+}
+
+footer a {
+    color: #828282;
+    text-decoration: underline;
+} 
