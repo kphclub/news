@@ -156,6 +156,16 @@ main {
     color: #bf4110;
 }
 
+.news-type.products {
+    background-color: #f0dcfd;
+    color: #8e10bf;
+}
+
+.news-type.tools {
+    background-color: #fcf6dd;
+    color: #bf9610;
+}
+
 .news-type.programs {
     background-color: #e0fce2;
     color: #10bf31;
