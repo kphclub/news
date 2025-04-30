@@ -157,8 +157,8 @@ main {
 }
 
 .news-type.products {
-    background-color: #f0dcfd;
-    color: #8e10bf;
+    background-color: #e0fce2;
+    color: #10bf31;
 }
 
 .news-type.tools {
@@ -167,8 +167,8 @@ main {
 }
 
 .news-type.programs {
-    background-color: #e0fce2;
-    color: #10bf31;
+    background-color: #d1e4ff;
+    color: #1048bf;
 }
 
 /* No results message */
