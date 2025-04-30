@@ -80,7 +80,7 @@ function displayNews(links) {
                 <span class="news-type ${item.type}">${item.type}</span>
             </div>
             <div class="news-info">
-                <span>by <a href="#">${item.memberName}</a></span>
+                <span>by ${item.memberName}</span>
                 <span>on ${formattedDate}</span>
             </div>
         `;
