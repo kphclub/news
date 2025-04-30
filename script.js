@@ -26,6 +26,19 @@ async function fetchNews() {
   }
 }
 
+// Function to ensure URL has a protocol
+function ensureHttps(url) {
+  if (!url) return '#';
+
+  // Check if URL already has a protocol
+  if (url.startsWith('http://') || url.startsWith('https://')) {
+    return url;
+  }
+
+  // Add https:// if not present
+  return 'https://' + url;
+}
+
 // Function to display news items
 function displayNews(links) {
   const newsContainer = document.getElementById('news-container');
@@ -48,20 +61,22 @@ function displayNews(links) {
       month: 'short',
     })} ${date.getDate()}, ${date.getFullYear()}`;
 
+    // Ensure the link has https://
+    const secureLink = ensureHttps(item.link);
+
     // Create link domain display
     let domain = '';
     try {
-      const url = new URL(item.link);
+      const url = new URL(secureLink);
       domain = url.hostname.replace('www.', '');
     } catch (e) {
       domain = 'unknown';
     }
 
-    // Removed member ID from the news info
     newsItem.innerHTML = `
             <div>
-                <a href="${item.link}" class="news-title" target="_blank">${item.name}</a>
-                <span class="domain">(${domain})</span>
+                <a href="${secureLink}" class="news-title" target="_blank">${item.name}</a>
+                <a href="${secureLink}" class="domain" target="_blank">(${domain})</a>
                 <span class="news-type ${item.type}">${item.type}</span>
             </div>
             <div class="news-info">
