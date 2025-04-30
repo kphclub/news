@@ -141,6 +141,11 @@ main {
     text-transform: uppercase;
 }
 
+.news-type.news {
+    background-color: #ffd1dc;
+    color: #c71585;
+}
+
 .news-type.articles {
     background-color: #ddeefc;
     color: #1068bf;
