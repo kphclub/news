@@ -9,38 +9,42 @@
 </head>
 <body>
     <header>
-        <div class="header-content">
-            <div class="logo">
-                <a href="/">KPH News</a>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="/">KPH News</a>
+                </div>
+                <nav>
+                    <a href="https://kph.club">welcome</a>
+                    <a href="https://nas.io/kphjobs">jobs</a>
+                    <a href="https://wiki.kph.club">wiki</a>
+                    <a href="https:/join.kph.club">join</a>
+                </nav>
             </div>
-            <nav>
-                <a href="https://kph.club">welcome</a>
-                <a href="https://nas.io/kphjobs">jobs</a>
-                <a href="https://wiki.kph.club">wiki</a>
-                <a href="https:/join.kph.club">join</a>
-            </nav>
         </div>
     </header>
     
-    <div class="filter-container">
-        <span>Filter by: </span>
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="articles">Articles</button>
-        <button class="filter-btn" data-filter="videos">Videos</button>
-        <button class="filter-btn" data-filter="programs">Programs</button>
+    <div class="container">
+        <div class="filter-container">
+            <span>Filter by: </span>
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="articles">Articles</button>
+            <button class="filter-btn" data-filter="videos">Videos</button>
+            <button class="filter-btn" data-filter="programs">Programs</button>
+        </div>
+        
+        <main>
+            <div id="news-container">
+                <div class="loading">Loading...</div>
+            </div>
+        </main>
+        
+        <footer>
+            <div class="footer-content">
+                <p>KPH News Clone | <a href="https://kph-mafia.microcompany.workers.dev/api/links" target="_blank">API Source</a></p>
+            </div>
+        </footer>
     </div>
-    
-    <main>
-        <div id="news-container">
-            <div class="loading">Loading...</div>
-        </div>
-    </main>
-    
-    <footer>
-        <div class="footer-content">
-            <p>KPH News | <a href="https://kph.club" target="_blank">KPH Home</a></p>
-        </div>
-    </footer>
 
     <script src="script.js"></script>
 </body>

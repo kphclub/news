@@ -17,15 +17,23 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
 /* Header */
 header {
     background-color: #ff6600;
-    padding: 5px 10px;
+    padding: 5px 0;
 }
 
 .header-content {
     display: flex;
     align-items: center;
+    gap: 5px;
 }
 
 .logo {
@@ -55,9 +63,8 @@ nav a {
 
 /* Filter controls */
 .filter-container {
-    max-width: 1200px;
-    margin: 10px auto 0;
-    padding: 8px 15px;
+    margin: 10px 0 0;
+    padding: 8px 0;
     display: flex;
     align-items: center;
     border-bottom: 1px solid #e6e6df;
@@ -92,9 +99,7 @@ nav a {
 
 /* Main content */
 main {
-    max-width: 1200px;
-    margin: 10px auto;
-    padding: 0 15px;
+    margin: 10px 0;
 }
 
 .loading {
@@ -161,8 +166,7 @@ main {
 /* Footer */
 footer {
     margin-top: 30px;
-    padding: 20px;
-    background-color: #f6f6ef;
+    padding: 20px 0;
     border-top: 1px solid #e6e6df;
     text-align: center;
     font-size: 12px;
