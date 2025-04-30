@@ -118,6 +118,12 @@ main {
     font-size: 15px;
 }
 
+.domain {
+    font-size: 11px;
+    color: #828282;
+    margin-left: 3px;
+}
+
 .news-info {
     color: #828282;
     font-size: 11px;
