@@ -68,6 +68,14 @@ nav a {
     display: flex;
     align-items: center;
     border-bottom: 1px solid #e6e6df;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+}
+
+.filter-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
 }
 
 .filter-container span {
@@ -144,33 +152,38 @@ main {
 }
 
 .news-type.news {
-    background-color: #ffd1dc;
-    color: #c71585;
+    background-color: #ffccd5;
+    color: #b30020;
 }
 
 .news-type.articles {
-    background-color: #ddeefc;
-    color: #1068bf;
+    background-color: #ccf0e6;
+    color: #007a63;
 }
 
 .news-type.videos {
-    background-color: #fce8dd;
-    color: #bf4110;
+    background-color: #ffe0cc;
+    color: #b35c00;
 }
 
 .news-type.products {
-    background-color: #e0fce2;
-    color: #10bf31;
+    background-color: #d5ffcc;
+    color: #227700;
 }
 
 .news-type.tools {
-    background-color: #fcf6dd;
-    color: #bf9610;
+    background-color: #ffffcc;
+    color: #8a7700;
+}
+
+.news-type.tweets {
+    background-color: #cce6ff;
+    color: #0057b3;
 }
 
 .news-type.programs {
-    background-color: #d1e4ff;
-    color: #1048bf;
+    background-color: #efe0ff;
+    color: #7a5fa3;
 }
 
 /* No results message */
